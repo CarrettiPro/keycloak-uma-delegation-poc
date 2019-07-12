@@ -1,0 +1,30 @@
+{
+    "realm": "uma-poc",
+    "auth-server-url": "http://localhost:8180/auth",
+    "ssl-required": "external",
+    "resource": "uma-poc-backend",
+    "bearer-only": true,
+    "credentials": {
+        "secret": "063510d0-1775-400c-b9b2-94cfe179756e"
+    },
+    "policy-enforcer": {
+        "enforcement-mode": "PERMISSIVE",
+        "user-managed-access": {},
+        "paths": [
+            {
+                "name": "Stuff Resource",
+                "path": "/stuff/{id}",
+                "methods": [
+                    {
+                        "method": "GET",
+                        "scopes": ["stuff:read"]
+                    },
+                    {
+                        "method": "DELETE",
+                        "scopes": ["stuff:delete"]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "realm": "uma-poc",
+    "auth-server-url": "http://localhost:8180/auth",
+    "ssl-required": "external",
+    "resource": "uma-poc-backend",
+    "credentials": {
+        "secret": "063510d0-1775-400c-b9b2-94cfe179756e"
+    }
+}
