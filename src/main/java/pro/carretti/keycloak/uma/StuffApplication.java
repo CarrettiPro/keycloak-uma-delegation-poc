@@ -16,6 +16,7 @@ public class StuffApplication extends Application {
 
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(pro.carretti.keycloak.uma.StuffEndpoint.class);
+        resources.add(pro.carretti.keycloak.uma.StuffShareEndpoint.class);
     }
 
 }
