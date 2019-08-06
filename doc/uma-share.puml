@@ -1,0 +1,24 @@
+@startuml
+
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName "Source Sans Pro"
+hide footbox
+
+actor Beavis
+actor Butthead
+actor Daria
+
+Beavis -> Stuff **: <<create>>
+Beavis -> Butthead: <<share>>
+note right of Beavis
+    for read/write
+end note
+
+Butthead -> Stuff: <<get>>
+activate Stuff
+return OK
+
+Daria -> Stuff: <<get>>
+return Forbidden
+
+@enduml

@@ -1,0 +1,71 @@
+@startuml
+
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName "Source Sans Pro"
+skinparam ParticipantPadding 10
+skinparam BoxPadding 10
+
+actor Beavis
+actor Butthead
+actor Daria
+
+box "Backend"
+    participant REST
+    database DB
+end box
+
+box "Keycloak"
+    participant OIDC
+    participant UMA
+end box
+
+autoactivate on
+
+== Authenticate ==
+ref over Beavis, OIDC: authenticate
+
+== Create Resource ==
+ref over Beavis, UMA: create resource
+
+== Share Resource ==
+ref over Beavis, UMA: share resource (user: Butthead, scope: <b>"stuff:share"</b>)
+
+== Authenticate (2) ==
+ref over Butthead, OIDC: authenticate
+
+== Share Resource (2) ==
+autonumber 18 "<b>[##'']</b>"
+Butthead -> REST: <<share>>
+note right of Butthead
+    POST /stuff/${ID}/share
+
+    Authorization: Bearer ${rpt}
+    Content-Type: application/json'
+    {
+        "requester": "123-456-789",
+        "requesterName": <b>"daria"</b>,
+        "scopes": [ <b>"stuff:read"</b> ]
+    }
+end note
+REST -> OIDC: <<impersonate(owner)>>
+return owner_access_token
+REST -> UMA: <<create permission ticket>>
+note right of REST
+    POST ${realm}/authz/protection/permission/ticket
+
+    Authorization: Bearer ${owner_access_token}
+    Content-Type: application/json'
+    {
+      "resource": "${resource_id}",
+      "requester": "${user_id}",
+      "granted": true,
+      "scopeName": <b>"stuff:read"</b>
+    }
+end note
+return 201 Created
+REST --> Butthead: 201 Created
+
+== Access Resource ==
+ref over Daria, DB: access resource
+
+@enduml

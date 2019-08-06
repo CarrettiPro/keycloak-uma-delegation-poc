@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="358px" preserveAspectRatio="none" style="width:276px;height:358px;" version="1.1" viewBox="0 0 276 358" width="276px" zoomAndPan="magnify"><defs><filter height="300%" id="f10pvuqsswpxr1" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#f10pvuqsswpxr1)" height="30.341" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="241.5" y="237.2189"/><rect fill="#FEFECE" filter="url(#f10pvuqsswpxr1)" height="31.5979" style="stroke: #A80036; stroke-width: 1.5;" width="42" x="223.5" y="97.5979"/><text fill="#000000" font-family="Source Sans Pro" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="28" x="230.5" y="118.3739">Stuff</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="30" x2="30" y1="87.5979" y2="346.2419"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="108" x2="108" y1="87.5979" y2="346.2419"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="167" x2="167" y1="87.5979" y2="346.2419"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="246.5" x2="246.5" y1="130.8969" y2="346.2419"/><text fill="#000000" font-family="Source Sans Pro" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="38" x="8" y="83.7759">Beavis</text><ellipse cx="30" cy="13" fill="#FEFECE" filter="url(#f10pvuqsswpxr1)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><path d="M30,21 L30,48 M17,29 L43,29 M30,48 L17,63 M30,48 L43,63 " fill="none" filter="url(#f10pvuqsswpxr1)" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="Source Sans Pro" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="56" x="77" y="83.7759">Butthead</text><ellipse cx="108" cy="13" fill="#FEFECE" filter="url(#f10pvuqsswpxr1)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><path d="M108,21 L108,48 M95,29 L121,29 M108,48 L95,63 M108,48 L121,63 " fill="none" filter="url(#f10pvuqsswpxr1)" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="Source Sans Pro" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="31" x="149" y="83.7759">Daria</text><ellipse cx="167.5" cy="13" fill="#FEFECE" filter="url(#f10pvuqsswpxr1)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><path d="M167.5,21 L167.5,48 M154.5,29 L180.5,29 M167.5,48 L154.5,63 M167.5,48 L180.5,63 " fill="none" filter="url(#f10pvuqsswpxr1)" style="stroke: #A80036; stroke-width: 2.0;"/><rect fill="#FFFFFF" filter="url(#f10pvuqsswpxr1)" height="30.341" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="241.5" y="237.2189"/><polygon fill="#A80036" points="211.5,115.9389,221.5,119.9389,211.5,123.9389,215.5,119.9389" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="30" x2="217.5" y1="119.9389" y2="119.9389"/><text fill="#000000" font-family="Source Sans Pro" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="58" x="37" y="114.3899">&lt;&lt;create&gt;&gt;</text><rect fill="#FEFECE" filter="url(#f10pvuqsswpxr1)" height="31.5979" style="stroke: #A80036; stroke-width: 1.5;" width="42" x="223.5" y="97.5979"/><text fill="#000000" font-family="Source Sans Pro" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="28" x="230.5" y="118.3739">Stuff</text><polygon fill="#A80036" points="96,162.5369,106,166.5369,96,170.5369,100,166.5369" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="30" x2="102" y1="166.5369" y2="166.5369"/><text fill="#000000" font-family="Source Sans Pro" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="54" x="37" y="160.9879">&lt;&lt;share&gt;&gt;</text><path d="M35,179.5369 L35,205.5369 L132,205.5369 L132,189.5369 L122,179.5369 L35,179.5369 " fill="#FBFB77" filter="url(#f10pvuqsswpxr1)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M122,179.5369 L122,189.5369 L132,189.5369 L122,179.5369 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="Source Sans Pro" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="76" x="41" y="197.3289">for read/write</text><polygon fill="#A80036" points="229.5,233.2189,239.5,237.2189,229.5,241.2189,233.5,237.2189" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="108" x2="235.5" y1="237.2189" y2="237.2189"/><text fill="#000000" font-family="Source Sans Pro" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="41" x="115" y="231.6699">&lt;&lt;get&gt;&gt;</text><polygon fill="#A80036" points="119,263.5599,109,267.5599,119,271.5599,115,267.5599" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="113" x2="245.5" y1="267.5599" y2="267.5599"/><text fill="#000000" font-family="Source Sans Pro" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="17" x="125" y="262.0109">OK</text><polygon fill="#A80036" points="234.5,293.9009,244.5,297.9009,234.5,301.9009,238.5,297.9009" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="167.5" x2="240.5" y1="297.9009" y2="297.9009"/><text fill="#000000" font-family="Source Sans Pro" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="41" x="174.5" y="292.3519">&lt;&lt;get&gt;&gt;</text><polygon fill="#A80036" points="178.5,324.2419,168.5,328.2419,178.5,332.2419,174.5,328.2419" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="172.5" x2="245.5" y1="328.2419" y2="328.2419"/><text fill="#000000" font-family="Source Sans Pro" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="55" x="184.5" y="322.6929">Forbidden</text><!--
+@startuml
+
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName "Source Sans Pro"
+hide footbox
+
+actor Beavis
+actor Butthead
+actor Daria
+
+Beavis -> Stuff **: <<create>>
+Beavis -> Butthead: <<share>>
+note right of Beavis
+    for read/write
+end note
+
+Butthead -> Stuff: <<get>>
+activate Stuff
+return OK
+
+Daria -> Stuff: <<get>>
+return Forbidden
+
+@enduml
+
+PlantUML version 1.2019.08(Sat Jul 13 22:25:14 MSK 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_212-b04
+Operating System: Linux
+OS Version: 5.1.14-desktop-1.mga7
+Default Encoding: UTF-8
+Language: ru
+Country: RU
+--></g></svg>

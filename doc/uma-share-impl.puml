@@ -1,0 +1,100 @@
+@startuml
+
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName "Source Sans Pro"
+skinparam ParticipantPadding 10
+skinparam BoxPadding 10
+
+actor Beavis
+actor Butthead
+
+box "Backend"
+    participant REST
+    database DB
+end box
+
+box "Keycloak"
+    participant OIDC
+    participant UMA
+end box
+
+autonumber "<b>[##]</b>"
+autoactivate on
+
+== Authenticate ==
+
+Beavis -> OIDC: <<authenticate>>
+return access_token
+Beavis -> OIDC: <<authorize>>
+return rpt
+
+== Create Resource ==
+
+Beavis -> REST: <<create>>
+note right of Beavis
+    POST /stuff
+    Authorization: Bearer ${rpt}
+end note
+REST -> OIDC: <<authenticate>>
+return client_token
+group transaction
+REST -> DB: <<create entity>>
+return <<entity ID>>
+REST -> UMA: <<create resource>>
+note right of REST
+    POST ${realm}/authz/protection/resource_set
+    Authorization: Bearer ${client_token}
+end note
+return <<resource ID>>
+REST -> REST: << associate ID and RID >>
+end
+REST --> Beavis: 201 Created
+deactivate REST
+
+== Share Resource ==
+
+Beavis -> REST: <<share>>
+note right of Beavis
+    POST /stuff/${ID}/share
+
+    Authorization: Bearer ${rpt}
+    Content-Type: application/json'
+    {
+        "requester": "123-456-789",
+        "requesterName": <b>"butthead"</b>,
+        "scopes": [ <b>"stuff:read"</b> ]
+    }
+end note
+REST -> UMA: <<create permission ticket>>
+note right of REST
+    POST ${realm}/authz/protection/permission/ticket
+
+    Authorization: Bearer ${rpt}
+    Content-Type: application/json'
+    {
+      "resource": "${resource_id}",
+      "requester": "${user_id}",
+      "granted": true,
+      "scopeName": <b>"stuff:read"</b>
+    }
+end note
+return 201 Created
+REST --> Beavis: 201 Created
+
+== Access Resource ==
+
+Butthead -> OIDC: <<authenticate>>
+return access_token
+Butthead -> OIDC: <<authorize>>
+return rpt
+Butthead -> REST: <<get>>
+note right of Butthead
+    GET /stuff/${ID}
+
+    Authorization: Bearer ${rpt}
+end note
+REST -> DB: <<get entity>>
+return
+REST --> Butthead: 200 OK
+
+@enduml
