@@ -1,4 +1,4 @@
-package pro.carretti.keycloak.uma;
+package pro.carretti.keycloak.uma.rest;
 
 import java.io.IOException;
 import java.util.List;

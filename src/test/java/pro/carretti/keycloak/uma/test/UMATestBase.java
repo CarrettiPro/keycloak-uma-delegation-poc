@@ -13,7 +13,7 @@ import org.keycloak.authorization.client.AuthzClient;
 import org.keycloak.common.util.Base64Url;
 import org.keycloak.representations.AccessToken;
 import org.keycloak.util.JsonSerialization;
-import pro.carretti.keycloak.uma.StuffShareEndpoint;
+import pro.carretti.keycloak.uma.rest.StuffShareEndpoint;
 
 public class UMATestBase {
 

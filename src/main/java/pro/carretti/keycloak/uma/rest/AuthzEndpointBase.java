@@ -1,5 +1,6 @@
-package pro.carretti.keycloak.uma;
+package pro.carretti.keycloak.uma.rest;
 
+import pro.carretti.keycloak.uma.util.ServerRequest;
 import java.io.IOException;
 import java.util.logging.Logger;
 import javax.servlet.http.HttpServletRequest;

@@ -1,4 +1,4 @@
-package pro.carretti.keycloak.uma;
+package pro.carretti.keycloak.uma.rest;
 
 import java.util.HashSet;
 import java.util.logging.Logger;

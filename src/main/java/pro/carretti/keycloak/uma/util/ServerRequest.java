@@ -1,4 +1,4 @@
-package pro.carretti.keycloak.uma;
+package pro.carretti.keycloak.uma.util;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
