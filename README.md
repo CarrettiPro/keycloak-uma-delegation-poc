@@ -119,7 +119,7 @@ Build, Deploy and Run
 1. Build:
 
    ````
-   mvn clean install
+   mvn -DskipTests=true clean install
    ````
 
 2. Run Keycloak:
