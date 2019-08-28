@@ -13,6 +13,7 @@ import org.keycloak.authorization.client.AuthzClient;
 import org.keycloak.common.util.Base64Url;
 import org.keycloak.representations.AccessToken;
 import org.keycloak.util.JsonSerialization;
+import pro.carretti.keycloak.uma.entity.Stuff;
 import pro.carretti.keycloak.uma.rest.StuffShareEndpoint;
 
 public class UMATestBase {
@@ -34,7 +35,8 @@ public class UMATestBase {
     static String TOKEN2;
     static String TOKEN3;
 
-    static String RID = "1";
+    static String RID;
+    static String DESCRIPTION = "Cool stuff";
 
     static AuthzClient AUTHZ;
 
@@ -59,19 +61,24 @@ public class UMATestBase {
 
     void do_create() {
 
+        Stuff stuff = new Stuff();
+        stuff.setDescription(DESCRIPTION);
+
         RID = RestAssured
             .given()
                 .spec(APP_RS)
                 .auth()
                     .oauth2(TOKEN1)
             .when()
-                .param("id", "1")
+                .contentType(ContentType.JSON)
+                .accept(ContentType.JSON)
+                .body(stuff)
                 .post("/stuff")
             .then()
                 .assertThat()
                     .statusCode(200)
-                .extract()
-                    .asString();
+            .extract()
+                .path("id");
 
     }
 
@@ -86,7 +93,7 @@ public class UMATestBase {
                 .delete("/stuff/" + RID)
             .then()
                 .assertThat()
-                    .statusCode(204);
+                    .statusCode(200);
 
     }
 
